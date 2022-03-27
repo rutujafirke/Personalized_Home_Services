@@ -32,7 +32,7 @@
                         <div class="col-lg-3">
                             <div class="brand">
                                 <a href="index.html">
-                                    HomeMate
+                                    <i><b>H</b>ome<b>M</b>ate</i>
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
                             </div>
@@ -92,56 +92,56 @@
         <div class="container-fluid">
             <div class="row px-xl-5">
                 <div class="col-md-10">
-                    <h5>Personal Details</h5>
+                    <h5><b>Personal Details</b></h5>
                 <form action="" method="post">
                     <div class="row">
                         <div class="form-group col">
-                            <label for="fname">First Name <i style="color: red;">*</i></label>
-                            <input id="fname" class="form-control" required placeholder="First Name">
+                            <label for="fname">First Name<i style="color: red;">*</i></label>
+                            <input id="fname" class="form-control" pattern="[A-Z][a-z]{1,15}" title="First letter should be uppercase another in lowercase" required>
                         </div>
                         <div class="form-group col">
                             <label for="lname">Last Name<i style="color: red;">*</i></label>
-                            <input type="lname" class="form-control" required placeholder="Last Name">
+                            <input type="lname" class="form-control" pattern="[A-Z][a-z]{1,15}" title="First letter should be uppercase another in lowercase" required >
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col">
                             <label for="mobno">Mobile No <i style="color: red;">*</i></label>
-                            <input id="mobno" class="form-control" required placeholder="Mobile No">
+                            <input id="mobno" class="form-control" required pattern="[0-9]{10}" title="Enter ten digit no">
                         </div>
                         <div class="form-group col">
                             <label for="email">Email<i style="color: red;">*</i></label>
-                            <input id="email" class="form-control" required placeholder="Email">
+                            <input type="email" id="email" class="form-control" required >
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col">
                             <label for="username">User Name<i style="color: red;">*</i></label>
-                            <input id="username" class="form-control" required placeholder="User Name">
+                            <input id="username" class="form-control" required >
                         </div>
                         <div class="form-group col">
                             <label for="password">Password<i style="color: red;">*</i></label>
-                            <input id="password" type="password" class="form-control" required placeholder="Password">
+                            <input type="password" id="password" class="form-control"minlength="8" maxlength="15" required >
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col">
                             <label for="adress">Address<i style="color: red;">*</i></label>
-                            <input id="adress" class="form-control" required placeholder="Adress">
+                            <input id="adress" class="form-control" required >
                         </div>
                         <div class="form-group col">
                             <label for="pincode">Pincode<i style="color: red;">*</i></label>
-                            <input id="pincode" class="form-control" required placeholder="Pincode">
+                            <input id="pincode" class="form-control" required pattern="[0-9]{6}" title="Enter six digit no" >
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col">
                             <label for="city">City<i style="color: red;">*</i></label>
-                            <input id="city" class="form-control" required placeholder="City">
+                            <input type="text" id="city" class="form-control" pattern="[A-Z][a-z]{1,30}" title="Should be letters" required >
                         </div>
                         <div class="col">
                             <label for="image">Image<i style="color: red;">*</i></label>
-                            <input type="file" class="form-control">
+                            <input type="file" class="form-control" required>
                         </div>                                                       
                     </div>
                     <div>
@@ -175,7 +175,7 @@
                                
                                 <a href="">Clients Review</a>
                                
-                                <a href="">Customer Support</a>
+                                <!-- <a href="">Customer Support</a> -->
                               
                             </div>
                         </div>
