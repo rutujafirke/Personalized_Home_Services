@@ -54,11 +54,11 @@ public class CustomerTbl implements Serializable {
 	}
 
 	
-	public CustomerTbl(int customerId, String customerAddress, String customerCity, String customerEmail,
+	public CustomerTbl(String customerAddress, String customerCity, String customerEmail,
 			String customerFirstname, String customerLastname, String customerMobile, String customerPassword,
 			int customerPincode, String customerUsername) {
 		super();
-		this.customerId = customerId;
+		
 		this.customerAddress = customerAddress;
 		this.customerCity = customerCity;
 		this.customerEmail = customerEmail;
