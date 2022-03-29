@@ -26,7 +26,7 @@
     <body>
         <div class="wrapper">
             <!-- Header Start -->
-            <div class="header">
+            <div class="header home">
                 <div class="container-fluid">
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
@@ -38,8 +38,7 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="topbar">
-                            </div>
+                        
                             <div class="navbar navbar-expand-lg bg-light navbar-light">
                                 <a href="#" class="navbar-brand">MENU</a>
                                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -51,22 +50,30 @@
                                         <a href="index.html" class="nav-item nav-link active">Home</a>
                                         <a href="services.html" class="nav-item nav-link">Services</a>
                                         <!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->                                      
-                                        <a href="" class="nav-item nav-link">Order</a>  
-                                         
+                                        <a href="contact.html" class="nav-item nav-link">Order</a>   
                                         <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
                                             <div class="dropdown-menu">
                                                 <a href="Login2.html" class="dropdown-item">Customer Login</a>
                                                 <a href="Login1.html" class="dropdown-item">Vendor Login</a>
-                                                <a href="logout.html" class="dropdown-item">Logout</a>
                                             </div>
-                                        </div>
+                                        </div>                                   
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- <div class="hero row align-items-center">
+                        <div class="col-md-7">
+                            <h2>Best & Trusted</h2>
+                            <h2><span>Cleaning</span> Service</h2>
+                            <p>Lorem ipsum dolor sit amet elit pretium facilisis ornare</p>
+                            <a class="btn" href="">Explore Now</a>
+                        </div>
+                    </div> -->
                 </div>
+                
             </div>
             <!-- Header End -->
              <!-- Page Header Start -->
@@ -74,7 +81,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-header">
-                            <h2>Profile</h2>
+                            <h2>Billing Page</h2>
                         </div>
                         <!-- <div class="col-12">
                             <a href="">Home</a>
@@ -85,50 +92,33 @@
             </div>
             <!-- Page Header End -->
             
-            <div class="container rounded bg-white mt-5 mb-5">
-                <div class="row">    
-                    <div class="col-md-3 border-right">
-                        <div class="d-flex flex-column align-items-center text-center p-3 py-5" id="img"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"></div>
-                    </div>
-                    <div class="col-md-8 border-right">
-                        <div class="p-3 py-5">
-                            <!-- <div class="d-flex justify-content-between align-items-center mb-3">
-                                <b><h4 class="text-right">Profile Settings</h4></b>
-                            </div> -->
-                            <div class="row mt-2">
-                                <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" value=""></div>
-                                <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value=""></div>
+            
+            <!-- About Start -->
+            <div class="container mt-5 p-3 rounded ">
+                <div class="row no-gutters d-flex justify-content-center">
+                    <div class="col-md-5">
+                        <div class="payment-info">
+                            <div class="d-flex justify-content-between align-items-center"><span><b>Card details</b></span><img class="rounded"  width="30"></div><span class="type d-block mt-3 mb-1">Card type</span><label class="radio"> <input type="radio" name="card" value="payment" checked> <span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png" /></span> </label>
+                            <div><label class="credit-card-label">Name on card</label><input type="text" class="form-control credit-inputs" placeholder="Name"></div>
+                            <div><label class="credit-card-label">Card number</label><input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000"></div>
+                            <div class="row">
+                                <div class="col-md-6"><label class="credit-card-label">Date</label><input type="text" class="form-control credit-inputs" placeholder="12/24"></div>
+                                <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="text" class="form-control credit-inputs" placeholder="342"></div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-md-6"><label class="labels">Mobile Number</label><input type="text" class="form-control"  value=""></div>
-                                <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control"  value=""></div>
-                                <div class="col-md-12"><label class="labels">Address</label><input type="text" class="form-control"  value=""></div>
-                                <div class="col-md-6"><label class="labels">Pincode</label><input type="text" class="form-control"  value=""></div>
-                                <div class="col-md-6"><label class="labels">city</label><input type="text" class="form-control"  value=""></div>
-                                <!-- <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                                <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
-                                <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div> -->
-                            </div>
-                            <!-- <div class="row mt-3">
-                                <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                                <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
-                            </div> -->
-                            <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                            <hr class="line">
+                            <div class="d-flex justify-content-between information"><span>Subtotal</span><span>₹3000.00</span></div>
+                            <div class="d-flex justify-content-between information"><span>Discount</span><span>₹20.00</span></div>
+                            <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>₹3020.00</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>$3020.00</span><span>Checkout<i class="fa fa-long-arrow-right ml-1"></i></span></button>
                         </div>
                     </div>
-                    <!-- <div class="col-md-4">
-                        <div class="p-3 py-5">
-                            <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
-                            <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
-                            <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-            </div>
-            </div>
- 
-     <!-- Sign Up End -->
+            <!-- About End -->
+                    
+                        
 
             <!-- Footer Start -->
             <div class="footer" size>
@@ -169,9 +159,10 @@
                         </div>
                     </div>
                 </div> -->
+            </div>
             <!-- Footer End -->
             
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            
         </div>
 
         <!-- JavaScript Libraries -->
