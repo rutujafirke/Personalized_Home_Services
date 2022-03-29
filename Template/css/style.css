@@ -1889,24 +1889,14 @@ a:focus {
         text-align: center;
     }
 }
-<<<<<<< HEAD
-/*******************************/
-/*********** slider **********/
-/*******************************/
-.img-slider{
-    position: relative;
-    width: 800px;
-    height: 500px;
-    margin: 10px;
-=======
+
 .img-slider{
     position: relative;
     width: 1300px;
     height: 700px;
-    margin: 0px;
-    left: -90px;
-    top: -80px;
->>>>>>> 8de6bd05029e2ac2bdbf5baac25637488b2292b6
+    margin: 10px;
+    left: -105px;
+    top: -90px;
     background: #ffffff;
   }
   
@@ -1936,11 +1926,7 @@ a:focus {
   }
   
   .img-slider .slide .info h2{
-<<<<<<< HEAD
-    color: #fff;
-=======
     color: rgb(0, 0, 0);
->>>>>>> 8de6bd05029e2ac2bdbf5baac25637488b2292b6
     font-size: 45px;
     text-transform: uppercase;
     font-weight: 800;
@@ -1948,13 +1934,9 @@ a:focus {
   }
   
   .img-slider .slide .info p{
-<<<<<<< HEAD
-    color: #fff;
-    background: rgb(255, 255, 255);
-=======
     color: rgb(0, 0, 0);
->>>>>>> 8de6bd05029e2ac2bdbf5baac25637488b2292b6
-    font-size: 16px;
+    background: rgba(255, 255, 255, 0.466);
+    font-size: 20px;
     width: 60%;
     padding: 10px;
     border-radius: 4px;
@@ -1964,11 +1946,7 @@ a:focus {
     z-index: 2;
     position: absolute;
     display: flex;
-<<<<<<< HEAD
-    bottom: 30px;
-=======
-    bottom: -150px;
->>>>>>> 8de6bd05029e2ac2bdbf5baac25637488b2292b6
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -2070,3 +2048,5 @@ a:focus {
       bottom: 10px;
     }
   }
+
+ 
