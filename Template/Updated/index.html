@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CleanMe - Cleaning Company Website Template</title>
+        <title>HomeMate - Home</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -50,7 +50,8 @@
                                         <a href="index.html" class="nav-item nav-link active">Home</a>
                                         <a href="services.html" class="nav-item nav-link">Services</a>
                                         <!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->                                      
-                                        <a href="" class="nav-item nav-link">Order</a>  
+                                        <a href="" class="nav-item nav-link">Order</a>
+                                        <a href="profile.html" class="nav-item nav-link">Profile</a>  
                                          
                                         <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
@@ -87,125 +88,46 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
-                            <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Slider | Autoplay With Navigation Visibility</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <div class="img-slider">
-      <div class="slide active">
-        <img src="img/image1.jpg" alt="">
-        <div class="info">
-            <h2>Satisfaction Guaranteed</h2>
-            <h3>We Treat Your Home Like Our Home</h3>
-          <p>Our cleaning crews are professionally trained, and if you’re ever unhappy with any area we’ve cleaned, we’ll return the next day and reclean it.</p>
-        <h4>We Are Fully Bonded and Insured</h4>
-        <p>At The Cleaning Authority, we are fully bonded and insured, meaning you can have peace of mind when we enter your home.</p>
-        <h5>Our Passion for the Environment</h5>
-        <p>We as a company are committed to using cleaning products that are environmentally responsible, sustainable, and safe for the Earth.</p>
-    </div>
-      </div>
-      <div class="slide">
-        <img src="img/image3.jpg" alt="">
-        <div class="info">
-            <h2>Why HomeMate?</h2>
-            <h3>Transparent pricing</h3>
-          <p>See fixed prices before you book. No hidden charges..</p>
-          <h4>Experts only</h4>
-          <p>Our professionals are well trained and have on-job expertise.</p>
-          <h5>Fully equipped</h5>
-          <p>We bring everything needed to get the job done well.</p>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="img/image2.jpg" alt="">
-        <div class="info">
-            <h2>How Does It Works?</h2>
-            <h3>Tell us about the job</h3>
-          <p>Tell us a few details about the job and pick the date and time you'd like to schedule your appointment.</p>
-          <br>
-          <br>
-          <h4>Connect with a Professional</h4>
-          <p>We'll connect you with a toprated pro, or you can read real customer reviews and request the pro you'd like to hire.</p>
-          <br>
-          <br>
-          <h5>Sit back and relax</h5>
-          <p>An experienced, fully-equipped housekeeping professional will be there on time. </p>
-      </div>
-      </div>
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-    var slides = document.querySelectorAll('.slide');
-    var btns = document.querySelectorAll('.btn');
-    let currentSlide = 1;
-
-    // Javascript for image slider manual navigation
-    var manualNav = function(manual){
-      slides.forEach((slide) => {
-        slide.classList.remove('active');
-
-        btns.forEach((btn) => {
-          btn.classList.remove('active');
-        });
-      });
-
-      slides[manual].classList.add('active');
-      btns[manual].classList.add('active');
-    }
-
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        manualNav(i);
-        currentSlide = i;
-      });
-    });
-
-    // Javascript for image slider autoplay navigation
-    var repeat = function(activeClass){
-      let active = document.getElementsByClassName('active');
-      let i = 1;
-
-      var repeater = () => {
-        setTimeout(function(){
-          [...active].forEach((activeSlide) => {
-            activeSlide.classList.remove('active');
-          });
-
-        slides[i].classList.add('active');
-        btns[i].classList.add('active');
-        i++;
-
-        if(slides.length == i){
-          i = 0;
-        }
-        if(i >= slides.length){
-          return;
-        }
-        repeater();
-      }, 10000);
-      }
-      repeater();
-    }
-    repeat();
-    </script>
-
-  </body>
-</html>
+                            <div class="about-img">
+                                <img src="img/about.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="about-text">
+                                <h2>Why should you choose professionals?</h2>
+                                <p>
+                                    •	Effective cleaning: The cleaning professionals are trained in using different state of the art tools 
+                                    and products to clean your home. Some of them are quite harsh and only professionals know how to handle such products.
+ <br>                                    
+•	Maintain Hygiene: Dust, allergens and germs may lead to breathing difficulties, allergies and
+diseases. lf you have pets at home, regular pressure vacuuming of carpets and sofa helps
+remove the fur which, if not cleaned regularly, also leads to breathing difficulties.
+<br>
+•	 Reduce Stress: lf you get stressed out by all the cleaning chores you need to do to maintain your
+home, you should book a professional home cleaning service for yourself.
+ <br>
+•	Improves Health: the air in your home gets cleaner due to the
+removal of dust. The furniture becomes germ-free because of pressure vacuuming, your house smells fresh and looks clean as well.
+<br>
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- About End -->
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                   
+Home deep cleaning includes everything that a standard cleaning by a house
+maid will not For starters, the equipment and the number of people involved
+in the process are more. A manual cleaning would usually just involve
+sweeping the floor, dusting and perhaps Cleaning the ceiling fans grudgingly.
+Home deep cleaning includes cleaning every nook and corner ofyour house in
+the best way possible.
+                </div>
+            </div>
                         <!-- Pricing Plan Start -->
                         <div class="price">
                             <div class="container">
@@ -224,16 +146,16 @@
                                                     <h2>Silver</h2>
                                                 </div>
                                                 <div class="price-pricing">
-                                                    <h2><small>₹</small>99</h2>
+                                                    <h2><small>₹</small>999</h2>
                                                 </div>
                                             </div>
                                             <div class="price-body">
                                                 <div class="price-des">
                                                     <ul>
-                                                        <li>3 Bedrooms cleaning</li>
-                                                        <li>2 Bathrooms cleaning</li>
-                                                        <li>1 Living room Cleaning</li>
-                                                        <li>Vacuum Cleaning</li>
+                                                        <li><b>Outdoor</b> </li>
+                                                        <li>Lawn trimming</li>
+                                                        <li>Leaf Blowing </li>
+                                                        <li>House Exterior</li>
                                                         <li>Within 6 Hours</li>
                                                     </ul>
                                                 </div>
@@ -255,16 +177,16 @@
                                                     <h2>Gold</h2>
                                                 </div>
                                                 <div class="price-pricing">
-                                                    <h2><small>₹</small>149</h2>
+                                                    <h2><small>₹</small>1099</h2>
                                                 </div>
                                             </div>
                                             <div class="price-body">
                                                 <div class="price-des">
                                                     <ul>
-                                                        <li>5 Bedrooms cleaning</li>
-                                                        <li>3 Bathrooms cleaning</li>
-                                                        <li>2 Living room Cleaning</li>
-                                                        <li>Vacuum Cleaning</li>
+                                                        <li><b>Indoor</b></li>
+                                                        <li>Kitchen and Bathroom deep clean</li>
+                                                        <li>Furniture reconditioning</li>
+                                                        <li>Glass and doors polishing</li>
                                                         <li>Within 6 Hours</li>
                                                     </ul>
                                                 </div>
@@ -286,17 +208,17 @@
                                                     <h2>Platinum</h2>
                                                 </div>
                                                 <div class="price-pricing">
-                                                    <h2><small>₹</small>199</h2>
+                                                    <h2><small>₹</small>2499</h2>
                                                 </div>
                                             </div>
                                             <div class="price-body">
                                                 <div class="price-des">
                                                     <ul>
-                                                        <li>8 Bedrooms cleaning</li>
-                                                        <li>5 Bathrooms cleaning</li>
-                                                        <li>3 Living room Cleaning</li>
-                                                        <li>Vacuum Cleaning</li>
-                                                        <li>Within 12 Hours</li>
+                                                        <li><b>Indoor and outdoor </b></li>
+                                                        <li>Sanitation and sewage </li>
+                                                        <li>Pest control and fumigation</li>
+                                                        <li>Glass and furniture polishing</li>
+                                                        <li>Within 12 hours </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -320,12 +242,22 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="section-header left">
-                                <p>Why Choose Us</p>
+                                <p>Why choose HomeMate?</p>
                                 <h2>Expert Cleaners and World Class Services</h2>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                            </p>
+                                •   <b> Complete cleaning and sanitation:</b> From pressure vacuuming to sanitizing the entire house, the
+HomeMate cleaning professionals make sure to deep clean your home thoroughly that provides lasting effects for 2-3 months.
+<br>	 
+•	<b> Insurance Against Damage:</b> With HomeMate you get insurance coverage up to Rs. 10,000
+on every booking against any damage.
+<br>
+•	<b> Usage of Professional grade chemicals:</b> Considering the hygiene of your house, 
+we at HomeMate only use Professional grade non-hozordous chemicals for home deep cleaning.
+<br>
+•	<b> Flexibility:</b> HomeMate provides you a comprehensive professional home cleaning service
+ to meet all your cleaning needs at your chosen location and time.
+</p>
                             <a class="btn" href="">Learn More</a>
                         </div>
                         <div class="col-md-7">
@@ -334,9 +266,9 @@
                                     <img src="img/feature-1.jpg" alt="Feature">
                                 </div>
                                 <div class="col-7">
-                                    <h3>Expert Cleaners</h3>
+                                    <h3>Well-Trained & Verified Cleaners </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        All HomeMate professionals are trained and taken through levels of background verification before getting on board to ensure the quality of work.
                                     </p>
                                 </div>
                             </div>
@@ -347,7 +279,7 @@
                                 <div class="col-7">
                                     <h3>Reasonable Prices</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        We ensure to keep our prices as competitive as possible while maintaining standards.
                                     </p>
                                 </div>
                             </div>
@@ -358,7 +290,8 @@
                                 <div class="col-7">
                                     <h3>Quick & Best Services</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        Customer ease and satisfaction is our first priority and to maintain that we ensure streamlined dispatching of service 
+                                        and quality control.
                                     </p>
                                 </div>
                             </div>
@@ -385,64 +318,71 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                            <span>1</span> Lorem ipsum dolor sit amet?
+                                            <span>1</span> What can home deep cleaning do that my maid can't?
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                           
+Home deep cleaning includes everything that a standard cleaning by a house
+maid will not For starters, the equipment and the number of people involved
+in the process are more. A manual cleaning would usually just involve
+sweeping the floor, dusting and perhaps Cleaning the ceiling fans grudgingly.
+Home deep cleaning includes cleaning every nook and corner ofyour house in
+the best way possible.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                            <span>2</span> Lorem ipsum dolor sit amet?
+                                            <span>2</span> What is the HomeMate’s promise?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            HomeMate's promise with home deep cleaning service (and every other
+                                            offering we have) is to give you: highly trained professionals who hold the
+                                            highest standards of quality, high quality of products— cleaning agents that
+                                            are professional grade & customer protection against any damages.
+                                            
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                            <span>3</span> Lorem ipsum dolor sit amet?
+                                            <span>3</span> What does home deep cleaning not include? 
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        
+If you book the home deep cleaning service from HomeMate, here is
+what is not included in the service: cleaning of utensils, walls and ceiling, floor
+polishing, wet shampooing of blinds, choir, sofa and carpets & polishing of
+wooden furniture.
+    
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>4</span> Lorem ipsum dolor sit amet?
+                                            <span>4</span> How much time will it take to get my house deep cleaned? 
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            It depends on the service, the package you choose and the size of your house
+(number of bedrooms). At the time of booking, we give you a fair idea of the
+duration of the service in the ”view details.” section. On an average, home
+deep cleaning takes about 6 hours.
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
+                                
                             <a class="btn" href="">Ask more</a>
                         </div>
                     </div>
@@ -468,7 +408,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p>Client Review</p>
-                        <h2>Client Says About Service</h2>
+                        <h2>What our clients say.</h2>
                     </div>
                     <div class="owl-carousel testimonials-carousel">
                         <div class="testimonial-item">
@@ -477,10 +417,12 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    With a multi-million dollar property You can’t afford to go for anything less than the best.
+Pure elegance and class in cleaning services, punctual and professional in every aspect.
+
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Tony Stark</h3>
+                                <h4>CEO, Stark Tech.</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -489,10 +431,13 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    Being old fashioned, I like to do all the household chores and cleaning myself 
+                                    but that’s not always practical as expertise and the right tools are also important, 
+                                    In an attempt to keep up with modern times, I was urged to give HomeMate a chance by a friend and
+                                     I completely rely on them and love the ease with which I can book a service specific to my need.
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Steve Rogers</h3>
+                                <h4>Agent, S.H.I.E.L.D</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -501,10 +446,12 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    With the strenuous and demanding job that I have, I don’t get much time to look after household chores
+                                     and cleaning routines and yet as a woman I don’t like anything less than perfect, HomeMate takes care of all 
+                                     my household needs and keeps my house  a ‘Home’.
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Natasha Romanoff</h3>
+                                <h4>Agent, S.H.I.E.L.D</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -513,10 +460,13 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    Perfection, precision and pristine, I like my work to have these basic qualities and want the same for 
+                                    every aspect of my life. Hygiene and cleanliness can be provided by anyone but I happen to be picky and want
+                                     everything according to my liking, HomeMate makes it easy by delivering everything specific to my instructions 
+                                     and ensuring zero margin for error.
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Dr. Stephen Strange</h3>
+                                <h4>Neurosurgeon</h4>
                             </div>
                         </div>
                     </div>
@@ -568,7 +518,7 @@
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
                                
-                                <a href="">Clients Review</a>
+                                <a href="clientsreview.html">Clients Review</a>
                                
                                 <!-- <a href="">Customer Support</a> -->
                               

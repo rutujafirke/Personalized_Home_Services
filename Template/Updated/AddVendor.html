@@ -1,15 +1,8 @@
-<%@page import="com.homemate.entities.VendorTbl"%>
-<%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Admin Panel</title>
+        <title>HomeMate - Add Vendor</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -33,7 +26,7 @@
     <body>
         <div class="wrapper">
             <!-- Header Start -->
-            <div class="header home">
+            <div class="header">
                 <div class="container-fluid">
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
@@ -45,7 +38,8 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            
+                            <div class="topbar">
+                            </div>
                             <div class="navbar navbar-expand-lg bg-light navbar-light">
                                 <a href="#" class="navbar-brand">MENU</a>
                                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -54,101 +48,108 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="adminHome.html" class="nav-item nav-link active">Home</a>
-                                   
-                                        <!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->                                      
-
-                                        <a href="login.html" class="nav-item nav-link">Logout</a>
-                                            
+                                     
+                                      
+                                     
+                                       
+                                      
+                                           
+                                            </div>
                                         </div>
-                                                                           
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- <div class="hero row align-items-center">
-                        <div class="col-md-7">
-                            <h2>Best & Trusted</h2>
-                            <h2><span>Cleaning</span> Service</h2>
-                            <p>Lorem ipsum dolor sit amet elit pretium facilisis ornare</p>
-                            <a class="btn" href="">Explore Now</a>
-                        </div>
-                    </div> -->
                 </div>
-                
             </div>
             <!-- Header End -->
+            
+            
+            <!-- Page Header Start -->
             <div class="text-center">
-            <div class="about">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-6">
+                        <div class="section-header">
+                            <h2>Add Vendor</h2>
                         </div>
-                            <div class="about-text">
-                                <a class="btn" href="AddVendor.html">Add Vendor</a>
-                                <a class="btn" href="">Show Vendors</a>
-                                <a class="btn" href="">Pending Orders</a>
-                                <a class="btn" href="">Fulfilled Orders</a>
-                    
-                              
-                            </div>
-                        </div>
+                        <!-- <div class="col-12">
+                            <a href="">Home</a>
+                            <a href="">Contact Us</a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-  <%
-List<VendorTbl> list = (List<VendorTbl>)request.getAttribute("vendor");
+            <!-- Page Header End -->
+    
+<!-- Sign Up Start -->
+             
+        <div class="container-fluid">
+            <div class="row px-xl-5">
+                <div class="col-md-10">
+                    <h5>Personal Details</h5>
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="fname">Company Name <i style="color: red;">*</i></label>
+                            <input id="fname" class="form-control" required placeholder="Company Name">
+                        </div>
+                        <div class="form-group col">
+                            <label for="mobno">Mobile No <i style="color: red;">*</i></label>
+                            <input id="mobno" class="form-control" required placeholder="Mobile No">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="form-group col">
+                            <label for="email">Email<i style="color: red;">*</i></label>
+                            <input id="email" class="form-control" required placeholder="Email">
+                        </div>
+                        <div class="form-group col">
+                            <label for="username">User Name<i style="color: red;">*</i></label>
+                            <input id="username" class="form-control" required placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="form-group col">
+                            <label for="password">Password<i style="color: red;">*</i></label>
+                            <input id="password" type="password" class="form-control" required placeholder="Password">
+                        </div>
+                        <div class="form-group col">
+                            <label for="adress">Address<i style="color: red;">*</i></label>
+                            <input id="adress" class="form-control" required placeholder="Adress">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="form-group col">
+                            <label for="pincode">Pincode<i style="color: red;">*</i></label>
+                            <input id="pincode" class="form-control" required placeholder="Pincode">
+                        </div>
+                        <div class="form-group col">
+                            <label for="city">City<i style="color: red;">*</i></label>
+                            <input id="city" class="form-control" required placeholder="City">
+                        </div>
 
-for(VendorTbl vendor : list){
-%>
+                        <div class="col">
+                            <label for="image">Image<i style="color: red;">*</i></label>
+                            <input type="file" class="form-control" required>
+                        </div>
 
-<p>
-<%=vendor.getVendorFirstname() %>
-<%=vendor.getVendorLastname() %>
-<%=vendor.getVendorMobile() %>
-<% %>
-</p>
-	
-<% } %>
-
-            
-            <!-- Feature Start -->
-           
-            <!-- Feature End -->
-        
-
-            <!-- FAQs Start -->
-          
-            <!-- FAQs End -->
-            
-            
-            <!-- Pricing Plan Start -->
-            
-           
-        
-            <!-- Pricing Plan End -->
-            
-            
-            <!-- Newsletter Start -->
-            
-            <!-- Newsletter End -->
-
-
-            <!-- Testimonial Start -->
-           
-            
-            <!-- Call to Action Start -->
-         
-
-            <!-- Blog Start -->
-            
-            <!-- Blog End -->
-
+                    </div>
+                   
+                    <div>
+                    <button class="btn btn-success" style="font-size: large;" type="submit">Submit</button>
+                    </div>
+                </div>                                 
+                </form>                              
+            </div>         
+        </div>             
+ 
+     <!-- Sign Up End -->
 
             <!-- Footer Start -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="footer" size>
                 <div class="container">
                     <div class="row">
@@ -156,11 +157,11 @@ for(VendorTbl vendor : list){
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
-                                <a href="about.html">About Us</a>
+                                <a href="">About Us</a>
                                
-                                <a href="services.html">Our Services</a>
+                                <a href="">Our Services</a>
                                 
-                                <a href="contacts.html">Contact Us</a>
+                                <a href="">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -169,7 +170,7 @@ for(VendorTbl vendor : list){
                                
                                 <a href="">Clients Review</a>
                                
-                                <!-- <a href="">Customer Support</a> -->
+                                <a href="">Customer Support</a>
                               
                             </div>
                         </div>
@@ -187,10 +188,9 @@ for(VendorTbl vendor : list){
                         </div>
                     </div>
                 </div> -->
-            </div>
             <!-- Footer End -->
             
-            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
 
         <!-- JavaScript Libraries -->

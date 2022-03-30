@@ -1,15 +1,8 @@
-<%@page import="com.homemate.entities.VendorTbl"%>
-<%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Admin Panel</title>
+        <title>HomeMate - Billing</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -38,14 +31,14 @@
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
                             <div class="brand">
-                                <a href="adminHome.html">
+                                <a href="index.html">
                                     <i><b>H</b>ome<b>M</b>ate</i>
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            
+                        
                             <div class="navbar navbar-expand-lg bg-light navbar-light">
                                 <a href="#" class="navbar-brand">MENU</a>
                                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -54,14 +47,18 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="adminHome.html" class="nav-item nav-link active">Home</a>
-                                   
+                                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                                        <a href="services.html" class="nav-item nav-link">Services</a>
                                         <!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->                                      
-
-                                        <a href="login.html" class="nav-item nav-link">Logout</a>
-                                            
-                                        </div>
-                                                                           
+                                        <a href="contact.html" class="nav-item nav-link">Order</a> 
+                                        <a href="profile.html" class="nav-item nav-link">Profile</a>  
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                            <div class="dropdown-menu">
+                                                <a href="Login2.html" class="dropdown-item">Customer Login</a>
+                                                <a href="Login1.html" class="dropdown-item">Vendor Login</a>
+                                            </div>
+                                        </div>                                   
                                     </div>
                                 </div>
                             </div>
@@ -80,75 +77,51 @@
                 
             </div>
             <!-- Header End -->
-            <div class="text-center">
-            <div class="about">
+             <!-- Page Header Start -->
+             <div class="text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-6">
+                        <div class="section-header">
+                            <h2>Billing Page</h2>
                         </div>
-                            <div class="about-text">
-                                <a class="btn" href="AddVendor.html">Add Vendor</a>
-                                <a class="btn" href="">Show Vendors</a>
-                                <a class="btn" href="">Pending Orders</a>
-                                <a class="btn" href="">Fulfilled Orders</a>
-                    
-                              
+                        <!-- <div class="col-12">
+                            <a href="">Home</a>
+                            <a href="">Contact Us</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+            
+            
+            <!-- About Start -->
+            <div class="container mt-5 p-3 rounded ">
+                <div class="row no-gutters d-flex justify-content-center">
+                    <div class="col-md-5">
+                        <div class="payment-info">
+                            <div class="d-flex justify-content-between align-items-center"><span><b>Card details</b></span><img class="rounded"  width="30"></div><span class="type d-block mt-3 mb-1">Card type</span><label class="radio"> <input type="radio" name="card" value="payment" checked> <span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png" /></span> </label>
+                            <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png" /></span> </label>
+                            <div><label class="credit-card-label">Name on card</label><input type="text" class="form-control credit-inputs" placeholder="Name"></div>
+                            <div><label class="credit-card-label">Card number</label><input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000"></div>
+                            <div class="row">
+                                <div class="col-md-6"><label class="credit-card-label">Date</label><input type="text" class="form-control credit-inputs" placeholder="12/24"></div>
+                                <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="text" class="form-control credit-inputs" placeholder="342"></div>
                             </div>
+                            <hr class="line">
+                            <div class="d-flex justify-content-between information"><span>Subtotal</span><span>₹3000.00</span></div>
+                            <div class="d-flex justify-content-between information"><span>Discount</span><span>₹20.00</span></div>
+                            <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>₹3020.00</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>$3020.00</span><span>Checkout<i class="fa fa-long-arrow-right ml-1"></i></span></button>
                         </div>
                     </div>
                 </div>
             </div>
-  <%
-List<VendorTbl> list = (List<VendorTbl>)request.getAttribute("vendor");
-
-for(VendorTbl vendor : list){
-%>
-
-<p>
-<%=vendor.getVendorFirstname() %>
-<%=vendor.getVendorLastname() %>
-<%=vendor.getVendorMobile() %>
-<% %>
-</p>
-	
-<% } %>
-
-            
-            <!-- Feature Start -->
-           
-            <!-- Feature End -->
-        
-
-            <!-- FAQs Start -->
-          
-            <!-- FAQs End -->
-            
-            
-            <!-- Pricing Plan Start -->
-            
-           
-        
-            <!-- Pricing Plan End -->
-            
-            
-            <!-- Newsletter Start -->
-            
-            <!-- Newsletter End -->
-
-
-            <!-- Testimonial Start -->
-           
-            
-            <!-- Call to Action Start -->
-         
-
-            <!-- Blog Start -->
-            
-            <!-- Blog End -->
-
+            <!-- About End -->
+                    
+                        
 
             <!-- Footer Start -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="footer" size>
                 <div class="container">
                     <div class="row">
@@ -156,18 +129,18 @@ for(VendorTbl vendor : list){
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
-                                <a href="about.html">About Us</a>
+                                <a href="">About Us</a>
                                
-                                <a href="services.html">Our Services</a>
+                                <a href="">Our Services</a>
                                 
-                                <a href="contacts.html">Contact Us</a>
+                                <a href="">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
                                
-                                <a href="">Clients Review</a>
+                                <a href="clientsreview.html">Clients Review</a>
                                
                                 <!-- <a href="">Customer Support</a> -->
                               

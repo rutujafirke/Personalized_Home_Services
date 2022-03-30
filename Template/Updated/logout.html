@@ -1,15 +1,8 @@
-<%@page import="com.homemate.entities.VendorTbl"%>
-<%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Admin Panel</title>
+        <title>CleanMe - Cleaning Company Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -33,12 +26,12 @@
     <body>
         <div class="wrapper">
             <!-- Header Start -->
-            <div class="header home">
+            <div class="header">
                 <div class="container-fluid">
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
                             <div class="brand">
-                                <a href="adminHome.html">
+                                <a href="index.html">
                                     <i><b>H</b>ome<b>M</b>ate</i>
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
@@ -54,101 +47,50 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="adminHome.html" class="nav-item nav-link active">Home</a>
-                                   
+                                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                                        <a href="services.html" class="nav-item nav-link">Services</a>
                                         <!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->                                      
-
-                                        <a href="login.html" class="nav-item nav-link">Logout</a>
-                                            
+                                        <a href="" class="nav-item nav-link">Order</a>  
+                                        <a href="profile.html" class="nav-item nav-link">Profile</a>
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                            <div class="dropdown-menu">
+                                                <a href="Login2.html" class="dropdown-item">Customer Login</a>
+                                                <a href="Login1.html" class="dropdown-item">Vendor Login</a>
+                                            </div>
                                         </div>
-                                                                           
+                                         
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- <div class="hero row align-items-center">
-                        <div class="col-md-7">
-                            <h2>Best & Trusted</h2>
-                            <h2><span>Cleaning</span> Service</h2>
-                            <p>Lorem ipsum dolor sit amet elit pretium facilisis ornare</p>
-                            <a class="btn" href="">Explore Now</a>
-                        </div>
-                    </div> -->
                 </div>
-                
             </div>
             <!-- Header End -->
-            <div class="text-center">
-            <div class="about">
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-6">
+                        <div class="col-12">
+                            <h2>YOU HAVE SUCCESSFULLY LOGGED OUT</h2>
+                            <h2>Login again</h2>
                         </div>
-                            <div class="about-text">
-                                <a class="btn" href="AddVendor.html">Add Vendor</a>
-                                <a class="btn" href="">Show Vendors</a>
-                                <a class="btn" href="">Pending Orders</a>
-                                <a class="btn" href="">Fulfilled Orders</a>
-                    
-                              
-                            </div>
-                        </div>
+                        <!-- <div class="col-12">
+                            <a href="">Please login again</a>
+                            <a href="">Contact Us</a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-  <%
-List<VendorTbl> list = (List<VendorTbl>)request.getAttribute("vendor");
-
-for(VendorTbl vendor : list){
-%>
-
-<p>
-<%=vendor.getVendorFirstname() %>
-<%=vendor.getVendorLastname() %>
-<%=vendor.getVendorMobile() %>
-<% %>
-</p>
-	
-<% } %>
-
-            
-            <!-- Feature Start -->
-           
-            <!-- Feature End -->
-        
-
-            <!-- FAQs Start -->
-          
-            <!-- FAQs End -->
-            
-            
-            <!-- Pricing Plan Start -->
-            
-           
-        
-            <!-- Pricing Plan End -->
-            
-            
-            <!-- Newsletter Start -->
-            
-            <!-- Newsletter End -->
+            <!-- Page Header End -->
 
 
-            <!-- Testimonial Start -->
-           
             
-            <!-- Call to Action Start -->
-         
-
-            <!-- Blog Start -->
-            
-            <!-- Blog End -->
-
 
             <!-- Footer Start -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="footer" size>
                 <div class="container">
                     <div class="row">
@@ -167,7 +109,7 @@ for(VendorTbl vendor : list){
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
                                
-                                <a href="">Clients Review</a>
+                                <a href="clientsreview.html">Clients Review</a>
                                
                                 <!-- <a href="">Customer Support</a> -->
                               
@@ -192,7 +134,6 @@ for(VendorTbl vendor : list){
             
             
         </div>
-
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

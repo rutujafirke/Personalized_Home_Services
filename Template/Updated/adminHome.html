@@ -1,10 +1,3 @@
-<%@page import="com.homemate.entities.VendorTbl"%>
-<%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -91,27 +84,15 @@
                                 <a class="btn" href="">Show Vendors</a>
                                 <a class="btn" href="">Pending Orders</a>
                                 <a class="btn" href="">Fulfilled Orders</a>
-                    
-                              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-  <%
-List<VendorTbl> list = (List<VendorTbl>)request.getAttribute("vendor");
+        </div>       
+           
+                        
 
-for(VendorTbl vendor : list){
-%>
-
-<p>
-<%=vendor.getVendorFirstname() %>
-<%=vendor.getVendorLastname() %>
-<%=vendor.getVendorMobile() %>
-<% %>
-</p>
-	
-<% } %>
 
             
             <!-- Feature Start -->
@@ -167,7 +148,7 @@ for(VendorTbl vendor : list){
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
                                
-                                <a href="">Clients Review</a>
+                                <a href="clientsreview.html">Clients Review</a>
                                
                                 <!-- <a href="">Customer Support</a> -->
                               

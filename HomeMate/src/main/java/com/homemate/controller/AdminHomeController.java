@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.homemate.entities.VendorTbl;
+
 @Controller
 @RequestMapping
 
 
 public class AdminHomeController {
+	
 
 
 	@GetMapping("/adminhome")
@@ -27,14 +28,10 @@ public class AdminHomeController {
 		return "AdminHome";
 	}
 	
-	public String List() {
-	
-	 List<VendorTbl> list = new ArrayList<VendorTbl>() {
+
+		
+		
 		 
-		 Repo.findall()
-	 
-	 }
-	
-	}
+
 }
 
