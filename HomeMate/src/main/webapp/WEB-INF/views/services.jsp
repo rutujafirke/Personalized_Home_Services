@@ -22,7 +22,6 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
         <div class="wrapper">
             <!-- Header Start -->
@@ -225,12 +224,15 @@
                         <!-- Pricing Plan End -->
 
             <!-- Service Start -->
+            
             <div class="service">
                 <div class="container">
                     <div class="section-header">
                         <p><b>Our Services</b></p>
                         <h2>Provide Services Worldwide</h2>
                     </div>
+                     <!-- Session Start -->
+                    <h4>User Email: ${customer.getCustomerEmail()}</h4>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="service-item">

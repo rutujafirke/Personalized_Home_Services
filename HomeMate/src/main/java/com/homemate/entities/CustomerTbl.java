@@ -4,6 +4,10 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+
 @Entity
 @Table(name="customer_tbl")
 @NamedQuery(name="CustomerTbl.findAll", query="SELECT c FROM CustomerTbl c")
@@ -11,7 +15,15 @@ public class CustomerTbl implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(generator = "sequence-generator")
+	@GenericGenerator(name = "sequence-generator",
+	strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",parameters = 
+	{
+		@Parameter(name = "sequence_name", value = "user_sequence"),
+		@Parameter(name = "initial_value", value = "100"),
+		@Parameter(name = "increment_size", value = "1")
+	})
+	
 	@Column(name="customer_id")
 	private int customerId;
 

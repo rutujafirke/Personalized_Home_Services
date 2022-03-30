@@ -90,7 +90,7 @@
             <div class="section-header text-center">
                 <div class="col-md-11">
                     <div class="contact-form">
-            <form class="form-signin" method="Post" action="userlogin">
+            <form class="form-signin" method="Post" action="adminhome">
                 <div class="section-header">
                     <h2>Login</h2>
                 </div>  

@@ -1,16 +1,19 @@
 package com.homemate.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.homemate.MyRepository;
 import com.homemate.entities.CustomerTbl;
+import com.homemate.repository.CustomerRepository;
+
 
 @Service
 public class CustomerDAO {
 	
 	@Autowired
-	MyRepository repository;
+	CustomerRepository repository;
 	
 	public void insertcustomerdetails(String fname,String lname,String mobileno,String email,String username,String password,String address,String city,int pincode )
 	{
@@ -18,6 +21,11 @@ public class CustomerDAO {
 		repository.save(userdetails);
 	}
 	
+	public CustomerTbl authenticationCustomer(String username,String password)
+	{
+		return repository.loginCustomer(username, password);
+		
+	}
 	
 	
 	
