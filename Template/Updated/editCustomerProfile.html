@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Vendor Panel</title>
+        <title>Customer Panel</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -68,36 +68,36 @@
                 <div class="row">
                     <div class="col-lg-3 my-lg-0 my-md-1">
                         <div id="sidebar" class="bg-purple">
-                            <div class="h4 text-white">Admin Account</div>
+                            <div class="h4 text-white">Customer Account</div>
                             <ul>
-                                <li class="active"> <a href="adminHome.html" class="text-decoration-none d-flex align-items-start">
+                                <li class="active"> <a href="customerHome.html" class="text-decoration-none d-flex align-items-start">
                                         <div class="fas fa-box pt-2 me-3"></div>
                                         <div class="d-flex flex-column">
-                                            <div class="link">My Account</div>
-                                            <div class="link-desc">View & Manage orders and returns</div>
+                                            <div class="link">My Profile</div>
+                                            <div class="link-desc">Customer Details</div>
                                         </div>
                                     </a> </li>
-                                <li> <a href="adminmanagevendor.html" class="text-decoration-none d-flex align-items-start">
+                                <li> <a href="customerbookservices.html" class="text-decoration-none d-flex align-items-start">
                                         <div class="fas fa-box-open pt-2 me-3"></div>
                                         <div class="d-flex flex-column">
-                                            <div class="link">Manage Vendor</div>
-                                            <div class="link-desc">Add & Remove Vendors</div>
+                                            <div class="link">Book Services</div>
+                                            <div class="link-desc">Add,Edit & Delete Services</div>
                                         </div>
                                     </a> </li>
-                                <li> <a href="viewfeedback.html" class="text-decoration-none d-flex align-items-start">
+                                <li> <a href="editCustomerProfile.html" class="text-decoration-none d-flex align-items-start">
                                         <div class="far fa-address-book pt-2 me-3"></div>
                                         <div class="d-flex flex-column">
-                                            <div class="link">View FeedBack</div>
-                                            <div class="link-desc">View & Manage Addresses</div>
+                                            <div class="link">Edit Profile</div>
+                                            <div class="link-desc">Accept & Reject Request</div>
                                         </div>
                                     </a> </li>
-                                <li> <a href="adminservicesdetails.html" class="text-decoration-none d-flex align-items-start">
-                                    <div class="fas fa-headset pt-2 me-3"></div>
-                                    <div class="d-flex flex-column">
-                                        <div class="link">Services</div>
-                                        <div class="link-desc">Pending & Completed Services</div>
-                                    </div>
-                                </a> </li>
+                                    <li> <a href="#" class="text-decoration-none d-flex align-items-start">
+                                        <div class="fas fa-trash pt-2 me-3"></div>
+                                        <div class="d-flex flex-column">
+                                            <div class="link">Deactivate Account</div>
+                                            <div class="link-desc">View FeedBack</div>
+                                        </div>
+                                    </a> </li>
             
                                     
             
@@ -108,8 +108,51 @@
                     <div class="col-lg-9 my-lg-0 my-1">
                         <div id="main-content" class="bg-white border">
                             <div class="d-flex flex-column">
-                                <div class="h5">Hello Jhon,</div>
-                                <div>Logged in as: someone@gmail.com</div>
+                                <div class="h5">Hello Customer,</div>
+                                <div><center><h2><b>Edit Your Profile</b></h2></center>
+                                    <div class="container rounded bg-white mt-5 mb-5">
+                                        <div class="row">    
+                                           
+                                            <div >
+                                                <div class="p-3 py-5">
+                                                    <!-- <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <b><h4 class="text-right">Profile Settings</h4></b>
+                                                    </div> -->
+                                                    <div class="row mt-2">
+                                                        <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" value=""></div>
+                                                        <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value=""></div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-md-6"><label class="labels">Mobile Number</label><input type="text" class="form-control"  value=""></div>
+                                                        <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control"  value=""></div>
+                                                        <div class="col-md-12"><label class="labels">Address</label><input type="text" class="form-control"  value=""></div>
+                                                        <div class="col-md-6"><label class="labels">Pincode</label><input type="text" class="form-control"  value=""></div>
+                                                        <div class="col-md-6"><label class="labels">city</label><input type="text" class="form-control"  value=""></div>
+                                                        <!-- <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                                                        <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                                                        <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div> -->
+                                                    </div>
+                                                    <!-- <div class="row mt-3">
+                                                        <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
+                                                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
+                                                    </div> -->
+                                                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-4">
+                                                <div class="p-3 py-5">
+                                                    <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                                                    <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                                                    <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                  
+                                
                             </div>
                             
                                 
