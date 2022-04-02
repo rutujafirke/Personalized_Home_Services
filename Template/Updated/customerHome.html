@@ -101,10 +101,15 @@
                             </ul>
                         </div>
                     </div>
+                    <%
+                    CustomerTbl customer = (CustomerTbl)session.getAttribute("customer");
+                    
+                    
+                %>
                     <div class="col-lg-9 my-lg-0 my-1">
                         <div id="main-content" class="bg-white border">
                             <div class="d-flex flex-column">
-                                <div class="h5">Hello Customer,</div>
+                                <div class="h5">Hello ${customer.getCustomerFirstname} ${customer.getCustomerLastname},</div>
                                 <div>Logged in as: someone@gmail.com</div>
                                 <p>Script</p>
                                 <%
