@@ -182,6 +182,8 @@
 												<option value="Bedroom Cleaning">Bedroom Cleaning</option>
 												<option value="Kitchen Cleaning">Kitchen Cleaning</option>
 												<option value="Bathroom cleaning">Bathroom cleaning</option>
+												<option value="Pest Control">Pest Control</option>
+												<option value="Before Festive Cleaning">Before Festive Cleaning</option>
 											</select>
 										</div>
 										<div class="form-group col">

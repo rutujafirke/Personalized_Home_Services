@@ -146,7 +146,7 @@
 										
 										<div class="testimonial-content">
 											<p><%=feedback.getBookingReview() %></p>
-											<h1><%=feedback.getServicesTbl().getServiceType() %></h1>
+											<h2><%=feedback.getServicesTbl().getServiceType() %></h2>
 											<h3><%=feedback.getCustomerTbl().getCustomerFirstname() %></h3>
 											
 										</div>

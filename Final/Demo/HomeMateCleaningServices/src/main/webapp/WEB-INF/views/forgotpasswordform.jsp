@@ -54,8 +54,8 @@
 							<div class="collapse navbar-collapse justify-content-between"
 								id="navbarCollapse">
 								<div class="navbar-nav ml-auto">
-									<a href="index.html" class="nav-item nav-link active">Home</a>
-									<a href="services.html" class="nav-item nav-link">Services</a>
+									<a href="/" class="nav-item nav-link active">Home</a>
+									<a href="/service" class="nav-item nav-link">Services</a>
 									<!-- <a href="Login.html" class="nav-item nav-link">Login</a>   -->
 									<a href="" class="nav-item nav-link">Order</a>
 
@@ -63,8 +63,8 @@
 										<a href="#" class="nav-link dropdown-toggle"
 											data-toggle="dropdown">Login</a>
 										<div class="dropdown-menu">
-											<a href="Login2.html" class="dropdown-item">Customer
-												Login</a> <a href="Login1.html" class="dropdown-item">Vendor
+											<a href="/customerlogin" class="dropdown-item">Customer
+												Login</a> <a href="/vendorlogin" class="dropdown-item">Vendor
 												Login</a>
 											<!-- <a href="logout.html" class="dropdown-item">Logout</a> -->
 										</div>
